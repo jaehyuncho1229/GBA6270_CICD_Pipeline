@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/jaehyuncho1229/GBA6270_CICD_Pipeline.git'
+                git url: 'https://github.com/jaehyuncho1229/GBA6270_CICD_Pipeline.git',
+                branch: 'main',
+                credentialsId: 'd9672def-eb08-4535-94b1-bd230a011e3b'
             }
         }
         stage('Build') {
@@ -38,3 +40,4 @@ pipeline {
         }
     }
 } 
+
