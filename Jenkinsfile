@@ -10,14 +10,14 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'chmod +x build.sh'
-                sh './build.sh'
+                sh 'chmod +x JC_build.sh'
+                sh './JC_build.sh'
             }
         }
         stage('Test') {
             steps {
-                sh 'chmod +x test.sh'
-                sh './test.sh'
+                sh 'chmod +x JC_test.sh'
+                sh './JC_test.sh'
             }
         }
     }
@@ -40,4 +40,5 @@ pipeline {
         }
     }
 } 
+
 
