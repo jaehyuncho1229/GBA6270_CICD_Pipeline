@@ -16,8 +16,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'chmod +x JC_test.sh'
-                sh './JC_test.sh'
+                sh 'chmod +x test.sh'
+                sh './test.sh'
             }
         }
     }
@@ -40,5 +40,6 @@ pipeline {
         }
     }
 } 
+
 
 
